@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+
+    background:radial-gradient(yellow,rgb(88, 50, 223));
+    background-position: center;
+    background-size: 200% 200%;/*increases size of the background*/
+    animation: gradient 15s ease infinite;
+    
+  } 
+#demo
+{
+    
+    float: center;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:beige;
+    margin-top: 8%;
+    margin-left: 24%;
+    margin-right: 25%;
+    margin-bottom: 12%;
+    padding: 34px;
+    background-clip: padding-box;
+}
+
+#btn
+{    
+     width: 91% ;
+     height: 1.8em;
+     color:white;
+     background:linear-gradient( rgb(57, 57, 216),blue);
+     border:1px solid rgb(57, 57, 216);
+     border-radius: 2px;
+}
+#btn:hover
+{
+    color:white;
+     background:linear-gradient( rgb(50, 50, 133),rgb(7, 7, 197));
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;/*changes the background (origin)position from 0% to 50% in large background size*/
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
